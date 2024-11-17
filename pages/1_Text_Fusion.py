@@ -116,4 +116,4 @@ if pdf_docs:
     if user_question:
         st.write(f"**👤 User:** {user_question}")
         response = user_input(user_question)
-        st.write(f"**🤖 Fusion Chat:** {response}")
+        st.write(f"**🤖:** {response}")
