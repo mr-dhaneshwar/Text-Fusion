@@ -60,12 +60,12 @@ def main():
         st.session_state["logged_in"] = False
 
     # Check query parameters to update session state
-    # query_params = st.query_params
-    # if query_params.get("logged_in") == ["true"]:
-    #     st.session_state["logged_in"] = True
-    # elif query_params.get("logged_in") == ["false"]:
-    #     st.session_state["logged_in"] = False
-    st.session_state["logged_in"] = True
+    query_params = st.query_params
+    if query_params.get("logged_in") == ["true"]:
+        st.session_state["logged_in"] = True
+    elif query_params.get("logged_in") == ["false"]:
+        st.session_state["logged_in"] = False
+    # st.session_state["logged_in"] = True
 
     sent_mail()
 
